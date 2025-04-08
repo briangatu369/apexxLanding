@@ -32,7 +32,14 @@ const HeroSection = () => {
             <div className="pt-8 flex items-center gap-6 opacity-0 animate-fade-in [animation-delay:800ms]"></div>
           </div>
           <div className="flex-1 relative opacity-0 animate-fade-in [animation-delay:600ms]">
-            <div className="relative">
+            <div className="w-full h-80">
+              <img
+                src="image1.webp"
+                alt=""
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            {/* <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/30 to-red-500/20 rounded-lg transform rotate-3"></div>
               <div className="relative bg-gray-800 p-4 rounded-lg shadow-xl border border-gray-700 transform -rotate-2 transition-transform hover:rotate-0 duration-500">
                 <div className="bg-black rounded p-3 mb-3">
@@ -55,7 +62,7 @@ const HeroSection = () => {
                   <div className="h-2 bg-gray-700 rounded w-5/6"></div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
