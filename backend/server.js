@@ -15,7 +15,7 @@ app.use(cors());
 // Get MongoDB URI from environment variables
 const MONGODB_URI = process.env.MONGODB_URI;
 
-app.get("test", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({ message: "Test is running" });
 });
 
