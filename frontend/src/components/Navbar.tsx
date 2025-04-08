@@ -68,6 +68,12 @@ const Navbar = () => {
             >
               How to Play
             </a>
+            <a
+              href="#join-waitlist"
+              className="text-gray-300 hover:text-yellow-500 transition-colors"
+            >
+              Join Waitlist
+            </a>
           </div>
         </div>
       )}
