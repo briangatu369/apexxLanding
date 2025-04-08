@@ -18,13 +18,16 @@ const CtaSection = () => {
 
     try {
       // Submit the form to the server
-      const response = await fetch("http://localhost:5000/api/subscribe/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        "https://apexx-landing-backend.vercel.app/api/subscribe/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
 
       // Parse the response to get the message from server
       const data = await response.json();
